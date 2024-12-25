@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(16, 3, 102);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(193, 193, 255);
+    font-size: 1.05rem;
+}
+
+main hr {
+    border: 0;
+    background-color: rgb(185, 185, 252);
+    height: 1px;
+    margin: 40px 84px;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0;
+
+}
+
+.firstSection>div {
+    width: 30%;
+}
+
+.leftSection {
+    font-size: 2.5rem;
+    margin: 40px;
+}
+
+.leftSection .buttons {
+    padding: 32px 0;
+}
+
+.leftSection .btn {
+    padding: 12px;
+    background: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+.rightSection img {
+    width: 75%;
+    margin: 40px 0;
+}
+
+.purple {
+    color: rgb(141, 63, 214);
+}
+
+#element {
+    color: rgb(141, 63, 214);
+}
+
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+
+}
+
+.secondSection h1 {
+    font-size: 1.9rem;
+
+}
+
+.secondSection .box {
+    background-color: orange;
+    width: 80vm;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+}
+
+.secondSection .vertical {
+    height: 93px;
+    width: 1px;
+    background-color: orange;
+    margin: 0 100px;
+
+}
+
+.image-top {
+    width: 45px;
+    position: relative;
+    top: -50px;
+    left: -15px;
+}
+
+.vertical-title {
+    position: relative;
+    top: 60px;
+    width: 150px;
+
+}
+
+.vertical-desc {
+    position: relative;
+    top: 80px;
+    color: gray;
+    width: 150px;
+    font-size: 10px;
+
+}
+
+footer {
+    background-color: rgb(40, 19, 1);
+
+}
+
+.footer {
+    display: flex;
+    padding: 60px 100px;
+    justify-content: space-evenly;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer div {
+    width: 175px;
+}
+
+footer .footer-rights {
+    text-align: center;
+    color: grey;
+    padding: 12px 0;
+
+}
+
+/* General Footer Styles */
+.footer {
+    background-color: rgb(40, 19, 1);
+    /* Dark background for the footer */
+    color: white;
+    padding: 30px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.footer a:hover {
+    color: #4c9eaf;
+    /* Change color on hover */
+}
+
+.back-to-top {
+    padding: 10px 20px;
+    background-color: rgb(16, 3, 102);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    top: 233%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+    .back-to-top:hover {
+        background-color: rgb(193, 193, 255);
+    }

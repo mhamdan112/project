@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <style>
+    /* General Reset */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #0c001d;
+        /* Dark Purple */
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    /* Container */
+    
+    .container {
+        text-align: center;
+        width: 90%;
+        max-width: 600px;
+        padding: 20px;
+        background-color: #310e5f;
+        /* Slightly lighter purple */
+        border-radius: 15px;
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+        animation: fadeIn 1s ease-in-out;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: #ffd700;
+        /* Golden */
+        animation: slideDown 1s ease-in-out;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        color: #9a68db;
+        /* Lighter Purple */
+    }
+    
+    .contact-item {
+        margin: 1rem 0;
+        font-size: 1.2rem;
+        line-height: 1.8;
+    }
+    
+    .contact-item a {
+        color: #ffd700;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    
+    .contact-item a:hover {
+        color: #ffdf70;
+    }
+    /* Footer */
+    
+    .footer {
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        color: #c0c0c0;
+    }
+    /* Animations */
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes slideDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Contact Me</h1>
+
+    <section>
+      <h2>Bilawal Khokhar</h2>
+      <p>About me</p>
+      <p class="contact-item">
+        My name is <strong>Bilawal Khokhar</strong>.
+      </p>
+    </section>
+
+    <section>
+      <p class="contact-item">
+        <strong>Email:</strong> 
+        <a href="mailto:bilawalkhokhar123384@gmail.com">bilawalkhokhar123384@gmail.com</a>
+      </p>
+      <p class="contact-item">
+        <strong>Phone:</strong> 03495071384
+      </p>
+      <p class="contact-item">
+        <strong>Address:</strong> B1-123 Sadiqabad,Rawalpindi
+      </p>
+      <p class="contact-item">
+        <strong>LinkedIn:</strong> 
+        <a href="https://www.linkedin.com/in/bilawalkhokhar4038ba335" target="_blank">
+          www.linkedin.com/in/bilawalkhokhar4038ba335
+        </a>
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; Copywrite @ by Bilawal Khokhar</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'poppins', sans-serif;
+      background-color: #0c001d; /* Dark Purple */
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Container Styling */
+    .container {
+      text-align: center;
+      width: 90%;
+      max-width: 1200px;
+    }
+
+    .header {
+      margin-bottom: 2rem;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    /* Services Grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .service-card {
+      background-color: #310e5f; /* Slightly lighter purple */
+      padding: 1.5rem;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: slideUp 1s ease-in-out;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .icon {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 1rem;
+      border-radius: 50%;
+      background-color: #5e24a4; /* Icon background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      color: white;
+      animation: bounce 2s infinite;
+    }
+
+    .icon.devops::before {
+      content: "🚀";
+    }
+
+    .icon.web-dev::before {
+      content: "💻";
+    }
+
+    .icon.photography::before {
+      content: "📸";
+    }
+
+    .icon.video-edit::before {
+      content: "🎥";
+    }
+
+    .service-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .service-card p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #c0c0c0;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Our Services</h1>
+      <p>Explore the wide range of services we offer!</p>
+    </header>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="icon devops"></div>
+        <h2>DevOps</h2>
+        <p>Streamlining operations with CI/CD pipelines, cloud solutions, and automation.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon web-dev"></div>
+        <h2>Web Development</h2>
+        <p>Creating responsive, user-friendly websites tailored to your needs.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon photography"></div>
+        <h2>Software Tester</h2>
+        <p>Test the softwares and website with proper attention and intrest.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon video-edit"></div>
+        <h2>Youtube automation</h2>
+        <p>The entities that own Youtube channels utilize automated tools and methodologies to manage and develop their channels.</p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; Mahad's Portfolio. All Rights Reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

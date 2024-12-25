@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        /* General Reset */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #0c001d;
+            /* Dark Purple */
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        /* Container */
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: #ffd700;
+            /* Golden */
+            margin-bottom: 2rem;
+            animation: slideDown 1s ease-in-out;
+        }
+        /* Project Grid */
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .project-card {
+            background-color: #310e5f;
+            /* Slightly lighter purple */
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.7);
+        }
+        
+        .project-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #ffd700;
+            /* Golden */
+        }
+        
+        .project-description {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #cfcfcf;
+        }
+        
+        .project-link {
+            text-decoration: none;
+            color: #ffd700;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        
+        .project-link:hover {
+            color: #ffdf70;
+        }
+        /* Footer */
+        
+        .footer {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #c0c0c0;
+        }
+        /* Animations */
+        
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>My Projects</h1>
+        <div class="projects">
+            <!-- DevOps Project -->
+            <div class="project-card">
+                <h2 class="project-title">Genral Store Billing system</h2>
+                <p class="project-description">
+                    Designed and implemented a proper billing system for a retail store with proper functionality and Security and Virtual graphics and animations.
+                </p>
+
+            </div>
+
+            <!-- Web Development Project -->
+            <div class="project-card">
+                <h2 class="project-title"> Collaborative Task Management Web App</h2>
+                <p class="project-description">
+                    Developed a real-time task management platform with user authentication, drag-and-drop boards, and third-party tool integration to enhance team collaboration and productivity.
+                </p>
+
+            </div>
+
+
+            <div class="project-card">
+                <h2 class="project-title">Online Learning Management System</h2>
+                <p class="project-description">
+                    Built a scalable platform for course management, offering user registration, content delivery, progress tracking, and integrated video conferencing to enhance online education.
+                </p>
+
+            </div>
+
+
+            <div class="project-card">
+                <h2 class="project-title">Fitness Tracker Mobile App</h2>
+                <p class="project-description">
+                    Developed a mobile app that tracks workouts, monitors health metrics, provides personalized fitness plans, and syncs with wearable devices for real-time progress updates.
+                </p>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; Usman Khalid. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
